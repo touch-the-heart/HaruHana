@@ -5,11 +5,13 @@ import Swiper from 'react-native-swiper';
 interface Props {
   children: React.ReactNode;
   wrapperStyle?: ViewStyle;
+  loop?: boolean;
   dotStyle?: ViewStyle;
-  color?: {
+  dotColor?: {
     activeColor: string;
     staticColor: string;
   };
+  paginationStyle?: ViewStyle;
 }
 
 const defaultDotColor = {
@@ -20,14 +22,17 @@ const defaultDotColor = {
 const Slide = ({
   children,
   wrapperStyle,
+  loop = true,
   dotStyle,
-  color = defaultDotColor,
+  dotColor = defaultDotColor,
+  paginationStyle,
 }: Props) => (
   <Swiper
+    paginationStyle={paginationStyle}
     style={wrapperStyle}
-    loop={true}
-    activeDotStyle={[dotStyle, {backgroundColor: color?.activeColor}]}
-    dotStyle={[dotStyle, {backgroundColor: color?.staticColor}]}>
+    loop={loop}
+    activeDotStyle={[dotStyle, {backgroundColor: dotColor?.activeColor}]}
+    dotStyle={[dotStyle, {backgroundColor: dotColor?.staticColor}]}>
     {children}
   </Swiper>
 );
