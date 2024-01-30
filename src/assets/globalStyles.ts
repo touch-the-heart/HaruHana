@@ -14,6 +14,16 @@ export const globalStyles = StyleSheet.create({
   //       elevation: 10,
   //     },
   //   }),
+  shadow:
+    Platform.OS === 'ios'
+      ? {
+          shadowColor: '#000000',
+          shadowOffset: {width: 0, height: 0},
+          shadowOpacity: 0.15,
+        }
+      : {
+          elevation: 15,
+        },
   topShadow:
     Platform.OS === 'ios'
       ? {
