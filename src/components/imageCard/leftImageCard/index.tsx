@@ -1,6 +1,8 @@
 import React from 'react';
-import {Image, ImageProps, View} from 'react-native';
-import {sytyles} from './styles';
+import {Image, ImageProps, Pressable} from 'react-native';
+import {styles} from './styles';
+import {globalStyles} from '../../../assets/globalStyles';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 interface Props {
   url?: ImageProps;
@@ -8,9 +10,18 @@ interface Props {
 
 const LeftImageCard = ({url}: Props) => {
   return (
-    <View style={sytyles.container}>
-      <Image source={url} />
-    </View>
+    <Pressable
+      style={[
+        styles.container,
+        url ?? styles.emptyContainer,
+        url ?? globalStyles.shadow,
+      ]}>
+      {url ? (
+        <Image source={url} />
+      ) : (
+        <Icon name={'plus'} size={36} color={'#C9C9C9'} style={{zIndex: 2}} />
+      )}
+    </Pressable>
   );
 };
 
