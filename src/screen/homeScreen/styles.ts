@@ -6,7 +6,7 @@ export const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',
   },
   imageContainer: {
-    marginHorizontal: 20,
+    marginHorizontal: 30,
     marginTop: 35,
     marginBottom: 410,
   },

@@ -18,15 +18,14 @@ const TiltleBox = ({title, setTitle}: Props) => {
 
   return (
     <View style={[styles.container, globalStyles.shadow]}>
-      <Typography
-        fontSize={12}
-        color={'#858585'}
-        style={styles.date}>{`${todayMonth}월 ${todayDate}일`}</Typography>
+      <Typography fontSize={12} color={'#858585'} style={styles.date}>
+        {`${todayMonth}월 ${todayDate}일`}
+      </Typography>
 
       <TextInput
         value={title}
         onChangeText={text => setTitle(text)}
-        placeholder={isInputTouched ? '' : `Today is?`}
+        placeholder={isInputTouched ? '' : 'Today is?'}
         style={styles.title}
         maxLength={11}
         onFocus={() => setIsInputTouched(true)}
