@@ -8,10 +8,13 @@ import TiltleBox from '../../components/titleBox';
 import {styles} from './styles';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 import IconC from 'react-native-vector-icons/MaterialCommunityIcons';
+import {useNavigation} from '@react-navigation/native';
 
 const HomeScreen = () => {
   const [title, setTitle] = useState<string>('');
   const [frameModalVisible, setFrameModalVisible] = useState<boolean>(false);
+
+  const navigation = useNavigation();
 
   const headerDate = (
     <Typography fontSize={13} style={styles.headerDate}>
@@ -35,7 +38,9 @@ const HomeScreen = () => {
           <IconC name={'collage'} color={'#969696'} size={25} />
         </Pressable>
 
-        <Pressable style={styles.replyButton}>
+        <Pressable
+          style={styles.replyButton}
+          onPress={() => navigation.navigate('Reply')}>
           <Typography fontSize={13} style={styles.replyText} color={'#969696'}>
             {'댓글'}
           </Typography>
