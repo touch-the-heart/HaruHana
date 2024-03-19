@@ -1,79 +1,155 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## HaruHana - 하루에 하나씩 사진 등록
 
-# Getting Started
+### 연인과의 매일의 추억을 간직하고 싶다면! 하루에 하나씩 우리의 추억을 쌓아요!
+![X - 21](https://github.com/touch-the-heart/HaruHana/assets/104304569/b0a08b7d-af75-45df-a710-c63f117f9338)
+![X - 183](https://github.com/touch-the-heart/HaruHana/assets/104304569/3acdcc5b-ed17-413b-a4af-8dcd2bb66984)
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
 
-## Step 1: Start the Metro Server
+</br></br>
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### 개발기간: 2022.02 ~ 진행 중
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## 👨‍👩‍👧‍👦 Team Members Introduce
+|금교석 (Back-End)               |심의석 (Front-End)               |
+|-----------------------------|-----------------------------|
+|<img src='https://avatars.githubusercontent.com/u/57718605?v=4' width='150'/>|<img src='https://user-images.githubusercontent.com/81614803/196865456-c74a5cb4-3143-4a8f-8207-11d2f8b5e872.png' width='150'/>|                  
+|[@KYO](https://github.com/player31-kks)           |[@shimeeuisuk](https://github.com/shimeeuisuk)       |
 
-```bash
-# using npm
-npm start
 
-# OR using Yarn
-yarn start
-```
+<br>
 
-## Step 2: Start your Application
+## 👩‍💻Used Stacks
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### **💫 Back-end & Joint tool** 
 
-### For Android
+ <br>
+ 
+ ### **🌟 Front-end & Joint tool**
+ #### App
+ Framework : React-Native
+  <br>
+ Status management : ReactQuery
+  <br>
+ Style : StyleSheet
 
-```bash
-# using npm
-npm run android
+ #### Admin
+ FrameWork : Next.js
+ <br>
+ Library : React
+ <br>
+ Status management : ReactQuery
+ <br>
+ Style : Styled-Components
 
-# OR using Yarn
-yarn android
-```
 
-### For iOS
+## 🏡Primary Function
 
-```bash
-# using npm
-npm run ios
+### 🎨 전체기능
+</br>
 
-# OR using Yarn
-yarn ios
-```
+<details>
+<summary><b>소셜로그인</b></summary>
+<div markdown="1">
+ 
+![X - 43](https://github.com/touch-the-heart/HaruHana/assets/104304569/1c806194-6a1a-4b0b-a77f-6b50ab7a693c)
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+ - **Reference** :pushpin:
+   - 카카오, 구글 아이디를 연동하여 로그인 할 수 있습니다.
+ 
+</div>
+</details>
+</br>
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+<details>
+<summary><b>커플 인증 기능</b></summary>
+<div markdown="1">
+ 
+![X - 35](https://github.com/touch-the-heart/HaruHana/assets/104304569/7a2efded-a047-4035-8aeb-4528d7ee8a1b)
+ - **Reference** :pushpin:
+   - 만약 커플 중 먼저 등록한 사람이라면 코드가 발급됩니다.
+   - 나중에 등록한 사람은 커플이 발급받은 코드를 입력하면 서로 커플 인증이 됩니다.
+ 
+</div>
+</details>
+</br>
 
-## Step 3: Modifying your App
+<details>
+<summary><b>메인스크린</b></summary>
+<div markdown="1">
+ 
+![X - 29](https://github.com/touch-the-heart/HaruHana/assets/104304569/d6a9cd71-6943-4396-bbf1-f8f9d42cd8be)
+![X - 98](https://github.com/touch-the-heart/HaruHana/assets/104304569/18f7dfeb-9ab4-42b8-aa01-23d2927337e4)
 
-Now that you have successfully run the app, let's modify it.
+ - **Reference** :pushpin:
+   - 메인 스크린에서 오늘의 사진을 등록 할 수 있습니다.
+   - 레이아웃을 선택하여 내가 보고 형태를 사진을 등록 할 수 있습니다.
+   - 그날의 키워드를 설정할 수 있습니다.
+ 
+</div>
+</details>
+</br>
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+<details>
+<summary><b>사진 별 댓글 등록 기능</b></summary>
+<div markdown="1">
+ 
+![X - 127](https://github.com/touch-the-heart/HaruHana/assets/104304569/71757b35-9d74-42b4-937c-b003efc8af3f)
+ - **Reference** :pushpin:
+   - 사진 별로 댓글을 등록 할 수 있습니다.
+   - 댓글 등록, 수정, 삭제가 가능합니다.
+ 
+</div>
+</details>
+</br>
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+<details>
+<summary><b>날짜 별 등록한 사진 확인 기능</b></summary>
+<div markdown="1">
+ 
+![X - 159](https://github.com/touch-the-heart/HaruHana/assets/104304569/a0e94b27-5e9e-4e80-8d34-d2de19bd4cfe)
+ - **Reference** :pushpin:
+   - 캘린더에서 날짜를 선택하여 그날의 등록한 사진을 볼 수 있습니다.
+   - 만약 사진 등록을 잊었다면 날짜를 선택하여 등록할 수 있습니다.
+   - 캘린더에서 등록한 사진의 갯수(0개,1개,2개)를 마크 표시로 확인 할 수 있습니다. 
+ 
+</div>
+</details>
+</br>
 
-## Congratulations! :tada:
+<details>
+<summary><b>마이페이지</b></summary>
+<div markdown="1">
+ 
+![X - 31](https://github.com/touch-the-heart/HaruHana/assets/104304569/69ee49e7-fb06-4ac3-8ce0-13aa84815342)
+ - **Reference** :pushpin:
+   - 마이페이지에서 기념일을 설정할 수 있습니다.
+   - 커플을 나타내는 색상을 변경할 수 있습니다.
+   - 마이페이지에서 로그아웃을 할 수 있습니다.
+ 
+</div>
+</details>
+</br>
 
-You've successfully run and modified your React Native App. :partying_face:
+## 🍵Team Culture
 
-### Now what?
+- 매일 오후 9시에 모여서 각자 진행 사항 및 이슈 논의
+- 매주 수 / 금요일 오후 5시에 정리 및 이슈사항 논의
+- 프로젝트 기간 내 오전 10 ~ 12 / 오후 3 ~ 5시까지는 항시 게더타운 상주 및 응답
+- BE / FE 각자 브랜치에 팀원끼리 논의를 거쳐 Merge & Push 
+- 작업 중 발생한 에러는, 팀원끼리 같이 해결
+- 금요일 마다 코드리뷰 진행
+- 프로젝트 진행 중 배려와 존중 / 커뮤니케이션 상시 ! 
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+<br>
 
-# Troubleshooting
+## ✨Git Commit & PR Message
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+| 태그이름 | 설명                                                  |
+| -------- | ----------------------------------------------------- |
+| feat     | 새로운 기능 추가                                      |
+| fix      | git과 관련된 버그 수정                                             |
+| design   | CSS 등 UI 수정                                 |
+| style    | 코드 포맷 변경, 세미 콜론 누락, 코드 수정이 없는 경우 |
+| refactor | 코드 리팩토링                                         |
+| docs     | 문서 수정 (MD 파일)                                   |
+| chore     | 패키지 및 라이브러리 수정              | 
